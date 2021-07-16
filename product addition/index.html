@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding Product</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <h1>Product Catalog</h1>
+
+    <form action="#" id="productform">
+      <input
+        type="file"
+        class="fileinput"
+        accept="image/*"
+        onchange="openFile(event)"
+        id="productimage"
+      />
+      <input type="text" placeholder="Product Name" id="productname" />
+      <input type="text" id="productmodel" placeholder="Model" />
+      <input type="text" id="productprice" placeholder="Price" />
+      <button type="submit" id="submit">SAVE</button>
+    </form>
+
+    <div id="productlist">
+      <nav class="productlistheader">
+        <ul>
+          <li>Picture</li>
+          <li>Brand</li>
+          <li>Model</li>
+          <li>Price</li>
+          <li>Remove</li>
+        </ul>
+      </nav>
+    </div>
+    <nav class="productlists" rel="lightbox [group]"></nav>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
